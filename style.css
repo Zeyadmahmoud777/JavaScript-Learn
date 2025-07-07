@@ -5,6 +5,7 @@
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
+  --black-color: rgb(65, 62, 62);
   --fa-style-family-classic: "Font Awesome 6 Free";
 }
 * {
@@ -70,6 +71,20 @@ ul {
     margin-left: 325px;
     margin-top: 0px;
 }
+.header .links .link a{
+    font-size: 16px;
+    color: var(--black-color);
+}
+.header .links .link a:hover{
+    /* margin-left: 7px; */
+    background-color: var(--blue-color);
+    transition: 0.3s ease;
+    color: #f1f5f9;
+}
+/* .header .links .link a.active{
+     background-color: var(--blue-color);
+    color: #f1f5f9;
+} */
 /***/
 .person{
     margin-left: 510px;
@@ -77,11 +92,37 @@ ul {
 .person .per-file img{
     width: 50px;
     border-radius: 50%;
+    position: relative;
+    left: -20px;
 }
 .person .per-file:hover > .por{
     display: block;
 }
 .por{
+    display: none;
+    background-color: #f3ebeb;
+    width: 200px;
+    height: 160px;
+    margin-left: -100px;
+    border-radius: 10px;
+}
+.por > span{
+    font-size: 20px;
+    text-align: center;
     display: block;
-
+    padding: 20px;
+    font-weight: 500;
+    color: rgb(83, 77, 77);
+}
+.por .per-pg{
+    padding: 10px 48px;
+    margin-left: 30px;
+    margin-top: 25px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.por .per-pg a{
+    color: black;
+    cursor: pointer;
 }
