@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(imgs/Cartoon-Calculator-on-transparent-background-PNG.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 3.5rem;
+    position: relative;
+    top: 50px;
+    left: 32%;
+    background-color: beige;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 4px 6px;
+    font-weight: bold;
+}
+#count-el{
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    font-size: 4rem;
+    color: black;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.bbtm{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: rgb(78, 152, 155);
+    border: 1px solid white;
+    color: beige;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.bbtm:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.bbtm:active{
+    background-color: rgb(78, 152, 155);
+    transform: translateX(-50%) scale(0.95);
+}
+.bbtm:focus{
+    outline: none;
+}
