@@ -55,9 +55,28 @@
 // }
 // logLapTime();
 
-let count = 0;
 
+//~for we can use this code to increment and decrement the count value
+// let count = 0;
+
+// function increment() {
+//     count = count + 1;
+//     document.getElementById("count-el").innerText = count;
+//     // console.log(count);
+// }
+ ///~for remove number from count we do this way
+// function decrement() {
+//     count = count - 1;
+//     document.getElementById("count-el").innerText = count;
+// // console.log(count);
+// }
+
+//* like a man in cours
+let countEl = document.getElementById("count-el");
+console.log(countEl);
+let count = 0;
 function increment() {
     count = count + 1;
-    console.log(count);
+    countEl.innerText = count;
 }
+//*dk 41:51 #15

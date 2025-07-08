@@ -64,3 +64,29 @@ h1{
 .bbtm:focus{
     outline: none;
 }
+.bbtmr{
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: red;
+    border: 1px solid white;
+    color: beige;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.bbtmr:hover{
+    background-color: darkred;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.bbtmr:active{
+    background-color: red;
+    transform: translateX(-50%) scale(0.95);
+}
