@@ -90,3 +90,29 @@ h1{
     background-color: red;
     transform: translateX(-50%) scale(0.95);
 }
+.saver{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: rgb(78, 152, 155);
+    border: 1px solid white;
+    color: beige;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.saver:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.saver:active{
+      transform: translateX(-50%) scale(0.95);
+
+}
