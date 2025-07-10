@@ -83,65 +83,54 @@
 //     countEl.innerText = count;
 // }
 
-let countEl = document.getElementById("count-el");
+// let countEl = document.getElementById("count-el");
 
-console.log(countEl);
+// console.log(countEl);
 
-let count = 0;
+// let count = 0;
 
-function increment() {
-    count = count + 1;
-    countEl.innerText = count;
-    console.log(count);
-}
-function decrement() {
-    count = count - 1;
-    countEl.innerText = count;
-    console.log(count);
-}
-function save() {
-    console.log(count);
-}
-save();
-let countEl = document.getElementById("count-el");
+// function increment() {
+//     count = count + 1;
+//     countEl.innerText = count;
+//     console.log(count);
+// }
+// function decrement() {
+//     count = count - 1;
+//     countEl.innerText = count;
+//     console.log(count);
+// }
+// function save() {
+//     console.log(count);
+// }
+// save();
+// let username = "per";
 
-console.log(countEl);
+// let message = "you have three new notifications";
 
-let count = 0;
+// let messageToUser = message + ", " + username + "!";
+// console.log(messageToUser); // message + ", " + username + "!"    (message + "," + username ); fasla ma benhom
+// let hello = "hi";
 
-function increment() {
-    count = count + 1;
-    countEl.innerText = count;
-    console.log(count);
-}
-function decrement() {
-    count = count - 1;
-    countEl.innerText = count;
-    console.log(count);
-}
-function save() {
-    console.log(count);
-}
-save();
-let countEl = document.getElementById("count-el");
+// let username = "osama";
 
-console.log(countEl);
+// let massege = "my name is";
 
-let count = 0;
+// let chat = hello + ", " + massege + " " + username;
 
-function increment() {
-    count = count + 1;
-    countEl.innerText = count;
-    console.log(count);
-}
-function decrement() {
-    count = count - 1;
-    countEl.innerText = count;
-    console.log(count);
-}
-function save() {
-    console.log(count);
-}
-save();
+// let namee = "per Harald Borgen";
+// let greeting = "Hi, my name is ";
+
+// let myGreeting = greeting + namee;
+
+// console.log(myGreeting); // Hi, my name is per Harald Borgen
+
+// console.log(chat);
+
+let welcomeEl = document.getElementById("welcome-el");
+
+let namee = "per Harald Borgen";
+let greeting = "Welcome back ";
+
+welcomeEl.innerText = greeting + namee;
 
 //*dk 49:07 #20
