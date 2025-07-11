@@ -138,17 +138,56 @@
 // welcomeEl.innerText = welcomeEl.innerText + "👋"; //to short code we use welcomeEl.innerText += "👋";
 
 
-let countEl = document.getElementById("count-el");
-let saveEl = document.getElementById("save-el");
-let count = 0;
+// let countEl = document.getElementById("count-el");
+// let saveEl = document.getElementById("save-el");
+// let count = 0;
 
-function increment() {
-    count += 1;
-    countEl.innerText = count;
-}
-function save() {
-    let countStr = count + " - ";
-    saveEl.innerText += countStr;
-}
-
+// function increment() {
+//     count += 1;
+//     countEl.textContent = count;
+// }
+// function save() {
+//     let countStr = count + " - ";
+//     saveEl.textContent += countStr;
+//     countEl.textContent = 0; // Reset the count display after saving
+//     count = 0; // Reset the count variable to 0
+// }
 //*dk 1:5:37 #26
+//* 1:15:46 section:2 variables practing lesson:1
+
+// let firstName = "Per";
+// let lastName = "Borgen";
+
+// let fullName = firstName + " " + lastName;
+
+// console.log(fullName);
+
+//*shose ico
+// let errorParagraph = document.getElementById("error");
+
+// function purchase() {
+//     console.log("button clicked");
+//     errorParagraph.textContent = "Somthing went Wrong, Please try again";
+// }
+
+//*Black JACK GAME
+let startGames = document.getElementById("start-btn");
+let gameArea = document.getElementById("game-aro");
+
+startGames.addEventListener("click", startGame); // Add event listener to the start button
+
+function startGame() {
+    startGames = gameArea.url="game.html"; // Set the URL to the blackjack game page
+    // gameArea.style.display = "block";              // Show the game area
+    // startGames.style.display = "block";          // Hide the start button
+    
+
+    
+    
+    // Initialize game variables and logic here
+    // For example, you could set up player and dealer hands, scores, etc.
+    // let playerHand = [];
+    // let dealerHand = [];
+    // let playerScore = 0;
+    // let dealerScore = 0;
+}

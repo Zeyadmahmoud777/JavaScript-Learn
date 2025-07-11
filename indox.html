@@ -7,19 +7,41 @@
     <link rel="stylesheet" href="fall.css">
 </head>
 <body>
-    <h1>people entered:</h1>
-    <h2 id="count-el">0</h2>
+    <!-- *tr <h1>people entered:</h1>
+    <h2 id="count-el">0</h2> -->
 
 <!--~ This button will increment the count when clicked -->
-    <button class="bbtm" id="increment-btn" onclick="increment()">Increment</button>
-    <!-- <button class="bbtmr" id="remove-btn" onclick="decrement()">Remove</button> -->
+    <!-- *tr <button class="bbtm" id="increment-btn" onclick="increment()">Increment</button>
+    <button class="bbtmr" id="remove-btn" onclick="decrement()">Remove</button>
     <button class="saver" id="savd-btn" onclick="save()">Save</button>
-    <p class="save-bt" id="save-el">Previous entires: </p>
-
-
-
+    <p class="save-bt" id="save-el">Previous entires: </p> -->
 
     <!-- <p id="welcome-el"></p> -->
+
+    <!--*shose <img src="imgs/download.jpg" alt="">
+    <p>Nike Shoe</p>
+    <button onclick="purchase()"> Purchase-$149</button>
+    <p id="error"></p> -->
+
+    <!--* BLACK JACK GAME-->
+    <h1>Black Jack Game</h1>
+    <div class="game-container">
+        <p id="message-el">Start the game!</p>
+        
+        <a class="ssd" id="game-aro" href="game.html"><button id="start-btn" onclick="startGame()">Start Game</button></a>
+        <div class="cards-container">
+            <h2>Cards:</h2>
+            <p id="cards-el">0</p>
+        </div>
+        <div class="score-container">
+            <h2>Score:</h2>
+            <p id="score-el">0</p>
+        </div>
+        <button id="new-card-btn" onclick="newCard()">New Card</button>
+        <button id="end-game-btn" onclick="endGame()">End Game</button>
+    </div>
+    
+
 
     <script src="main.js"></script>
 </body>

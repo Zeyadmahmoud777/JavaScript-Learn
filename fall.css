@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,32 +64,6 @@ h1{
 .bbtm:focus{
     outline: none;
 }
-/* .bbtmr{
-    position: absolute;
-    top: 60%;
-    left: 43%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: red;
-    border: 1px solid white;
-    color: beige;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 8px;
-}
-.bbtmr:hover{
-    background-color: darkred;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-.bbtmr:active{
-    background-color: red;
-    transform: translateX(-50%) scale(0.95);
-} */
 .saver{
     position: absolute;
     top: 70%;
@@ -115,10 +89,10 @@ h1{
 .saver:active{
       transform: translateX(-50%) scale(0.95);
 
-}
-
-.save-bt{
-    z-index: 100;
+    }
+    
+    .save-bt{
+        z-index: 100;
     position: absolute;
     left: 420px;
     top: 322px;
@@ -128,4 +102,156 @@ h1{
     border: 1px solid black;
     padding: 20px 25px;
     font-weight: bold;
+} */
+
+    /* .bbtmr{
+        position: absolute;
+        top: 60%;
+        left: 43%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        background-color: red;
+        border: 1px solid white;
+        color: beige;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 8px;
+    }
+    .bbtmr:hover{
+        background-color: darkred;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .bbtmr:active{
+        background-color: red;
+        transform: translateX(-50%) scale(0.95);
+    } */
+/**------shose--------*/
+/* button{
+    border: 1px solid black;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:active{
+    transform: scale(0.95);
+}
+p{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#error{
+    position: absolute;
+    font-size: 19px;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+} */
+
+/**BLACK JACK GAME*/
+body {
+    margin: 0;
+    padding: 0;
+   background-image: url('imgs/flat-design-poker-table-background_23-2151016809.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.score-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.cards-container{
+    position: absolute;
+    top: 238px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#score-el {
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    font-size: 60px;
+}
+#cards-el {
+    position: absolute;
+    left: 41px;
+    top: 45px;
+    font-size: 40px;
+}
+#message-el{
+    font-size: 40px;
+    color: bisque;
+    text-transform: capitalize;
+    margin-top: 120px;
+}
+#new-card-btn,
+#start-btn,
+#end-game-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px;
+}
+#end-game-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#new-card-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#start-btn:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#end-game-btn:active {
+    transform: scale(0.95);
+}
+#new-card-btn:active {
+    transform: scale(0.95);
+}
+#start-btn:active {
+    transform: scale(0.95);
 }
