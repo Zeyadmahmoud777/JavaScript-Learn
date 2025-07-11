@@ -126,11 +126,29 @@
 
 // console.log(chat);
 
-let welcomeEl = document.getElementById("welcome-el");
+// let welcomeEl = document.getElementById("welcome-el"); // Get the element with id "welcome-el" and write somthing in html by js
 
-let namee = "per Harald Borgen";
-let greeting = "Welcome back ";
+// let namee = "per Harald Borgen";
+// let greeting = "Welcome back ";
 
-welcomeEl.innerText = greeting + namee;
+// welcomeEl.innerText = greeting + namee;
 
-//*dk 49:07 #20
+// //&for edit the code and add one mor thing
+
+// welcomeEl.innerText = welcomeEl.innerText + "👋"; //to short code we use welcomeEl.innerText += "👋";
+
+
+let countEl = document.getElementById("count-el");
+let saveEl = document.getElementById("save-el");
+let count = 0;
+
+function increment() {
+    count += 1;
+    countEl.innerText = count;
+}
+function save() {
+    let countStr = count + " - ";
+    saveEl.innerText += countStr;
+}
+
+//*dk 1:5:37 #26
