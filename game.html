@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aha</title>
-    <link rel="stylesheet" href="blackGame.css">
+    <link rel="stylesheet" href="css/blackGame.css">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
@@ -14,7 +14,17 @@
     <div class="game-container">
     
 
-        <a><img src="imgs/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+        <button id="stting" class="set-btn" onclick="openset()"><span class="stteng"><img src="imgs/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></button>
+            <ul class="sub-set" id="stting-el" onclick="setlist()">
+                <h6>Sttings</h6>
+                <li class="sub-item"><a href="">Continue</a></li>
+                <li class="sub-item"><a href="">New Game</a></li>
+                <li class="sub-item"><a href="">Music play</a></li>
+                <li class="sub-item"><a href="">Exit</a></li>
+
+            </ul>
+
+        
 
 
 
@@ -40,6 +50,7 @@
     </div> -->
 
     <!-- <script src="main.js"></script> -->
+     <script src="javascript/blackGame.js"></script>
     
 </body>
 </html>
