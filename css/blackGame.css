@@ -75,14 +75,25 @@ i{
    position: absolute;
     top: 50px;
     width: 490px;
-    height: 735px;
+    height: 700px;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: red;
+    background: gray;
     border: 1px solid transparent;
     border-radius: 30px;
+    gap: 80px;
+}
+.sub-item a{
+    background-color: darkgray;
+    padding: 11px 84px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
 }
 .sub-set h6{
     font-weight: bold;
