@@ -13,15 +13,15 @@
     <h1>Black Jack Game</h1>
     <div class="game-container">
     
-
-        <button id="stting" class="set-btn" onclick="openset()"><span class="stteng"><img src="imgs/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></button>
-            <ul class="sub-set" id="stting-el" onclick="setlist()">
+<!-- <span class="stteng"><img src="imgs/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></span> -->
+        <button id="stting" class="set-btn" onclick="openset()"><span class="stteng"><img src="imgs/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></span></button>
+            <ul class="sub-set" id="stting-el">
                 <h6>Sttings</h6>
-                <li class="sub-item"><a href="">Continue</a></li>
-                <li class="sub-item"><a href="">New Game</a></li>
+                <button id="close-el" class="clos" onclick="close()"><img src="imgs/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                <li class="sub-item"><button id="continue-el" onclick="Continue()"><span>Continue</span></button></li>
+                <li class="sub-item"><a href="#">New Game</a></li>
                 <li class="sub-item"><a href="">Music play</a></li>
                 <li class="sub-item"><a href="">Exit</a></li>
-
             </ul>
 
         
@@ -51,6 +51,6 @@
 
     <!-- <script src="main.js"></script> -->
      <script src="javascript/blackGame.js"></script>
-    
+    </div>
 </body>
 </html>

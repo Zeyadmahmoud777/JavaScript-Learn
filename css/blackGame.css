@@ -70,30 +70,60 @@ i{
     position: absolute;
     right: 0px;
     top: -60px;
+    
+}
+#stting{
+    cursor: pointer;
+    display: contents;
 }
 .sub-set{
+    display: none;
    position: absolute;
     top: 50px;
     width: 490px;
     height: 700px;
     z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: gray;
+    background: rgb(0 0 0 / 40%);
     border: 1px solid transparent;
     border-radius: 30px;
     gap: 80px;
 }
 .sub-item a{
-    background-color: darkgray;
-    padding: 11px 84px;
+   background-color: darkslategrey;
+    padding: 14px 85px;
     border: 1px solid white;
     border-radius: 20px;
     font-size: 25px;
     font-weight: bold;
     color: white;
-    margin-bottom: 15px;
+    position: relative;
+    left: 85px;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.sub-item span{
+   background-color: darkslategrey;
+    padding: 14px 85px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: 85px;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
+    text-align: center;
+    margin-bottom: 65px;
+    cursor: pointer;
 }
 .sub-set h6{
     font-weight: bold;
@@ -102,14 +132,29 @@ i{
     padding: 20px;
     text-align: center;
 }
-.set-btn{
-    width: 8px;
-    height: 8px;
-    border-radius: 10px;
-    border: none;
+/* .set-btn{
+   position: absolute;
+    left: 65px;
+    width: 153px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 31px;
+    font-size: 28px;
+    font-weight: bold;
     cursor: pointer;
-    top: 0px;
-    position: absolute;
-    right: 0;
-}
+} */
 
+.clos{
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+}
+#continue-el{
+   width: 490px;
+    height: 130px;
+    background: transparent;
+    border: none;
+}
