@@ -16,3 +16,11 @@ if (sum < 21) {
 
 
 //* 1:39:48
+
+let age = 21;
+
+if (age <= 20) {
+    console.log("Ypu can not entet the club");
+} else {
+    console.log("welcome");
+};
