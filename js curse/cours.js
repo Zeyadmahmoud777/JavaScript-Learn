@@ -1,6 +1,6 @@
-// let cardse = [firstCard, secondCard];
 let firstCard = 11;
 let secondCard = 10;
+let cardse = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -17,7 +17,7 @@ function startGame() {
     renderGame();
 };
 function renderGame() {
-    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;//cardse[0]  cardse[1];
+    cardsEl.textContent = "Cards: " + cardse[0] + " " + cardse[1];//  ;
     sumEl.textContent = "sum: " + sum;
     if (sum < 21) {
     message = "Do you want to draw a new card?";
@@ -38,6 +38,19 @@ function newCard() {
 };
 
 
+// let per = ["per boragan", 35, true];>>>>>>//*Arreys is here;
+// console.log(per[1]);
+
+//*Count to ten!
+// for (let count = 10; count < 21; count += 1){
+//     console.log(count);
+// };
+
+
+//*First loop
+for (let i = 0; i < 6; i += 1){
+    console.log(i);
+};
 
 //* 2:21:46
 // let age = 21;
