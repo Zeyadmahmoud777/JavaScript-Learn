@@ -47,14 +47,31 @@ function newCard() {
 // };
 
 
-//*First loop
+//*First loop < count from 1 to 5 steps 1;
 for (let i = 0; i < 6; i += 1){
     console.log(i);
 };
+//*count from 10 to 100 steps 10; LOOP
+for (let i = 10; i < 101; i += 10){
+    console.log(i);
+};
 
-//* 2:21:46
+let cards = [7, 3, 9];
+for (let i = 0; i < cards.length; i++){
+    console.log(cards[i]);
+};
+
+let sentence = ["Hello ", "my ", "name ", "is ", "Per "];
+let greetimgEl = document.getElementById("greeimg-el");
+
+for (let i = 0; i < sentence.length; i++){
+    greetimgEl.textContent += sentence[i] + " ";
+};
+
+
+//* 3:8:46
 // let age = 21;
-// if (age <= 20) {
+// greetimgEl.textContent += sentence[i] + " ";      if (age <= 20) {
 //     console.log("Ypu can not entet the club");
 // } else {
 //     console.log("welcome");
