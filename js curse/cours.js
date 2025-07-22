@@ -45,13 +45,13 @@ function renderGame() {
     };
     sumEl.textContent = "sum: " + sum;
     if (sum < 21) {
-    message = "Do you want to draw a new card?";
+        message = "Do you want to draw a new card?";
 } else if (sum === 21) {
     message = "Blackjack!";
-    hasBlackJack = true;
+        hasBlackJack = true;
 } else {
     message = "You Lost?";
-    isAlive = true;
+        isAlive = true;
 }
     messageEl.textContent = message;
 };
@@ -65,18 +65,36 @@ function newCard() {
     };
     
 };
+
+
+//*loahdey
+// function loseMoney() {
+    
+// };
+
+
+
+//*4:10:42;
+
+
+
+
+
+
+
+
+
 //&GAME END
 //*3:58:07MY First OBJECT
-let course = {
-    title: "learn css grid for free",
-    lessons: 16,
-    creator: "Per haledr borghan",
-    length: 63,
-    level: 2,
-    isfree: true,
-    tags: ["Html", "css"]
-};
-//*4:04:42MY First OBJECT
+// let course = {
+//     title: "learn css grid for free",
+//     lessons: 16,
+//     creator: "Per haledr borghan",
+//     length: 63,
+//     level: 2,
+//     isfree: true,
+//     tags: ["Html", "css"]
+// };
 
 console.log(course.title);
 
