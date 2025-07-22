@@ -2,13 +2,21 @@
 let cards = [];
 let sum = 0;
 let hasBlackJack = false;
-let isAlive = false;
+let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
 
-console.log(cards);
+
+let player = {
+    name: "per",
+    chips: "145"
+};
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
+// console.log(cards);
 
 function getRandomCard() {
      let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -49,13 +57,46 @@ function renderGame() {
 };
 
 function newCard() {
+    if (isAlive === true && hasBlackJack === false) {
     let card = getRandomCard();
     sum += card;
     cards.push(card);
-    console.log(cards);
     renderGame();
+    };
+    
 };
 //&GAME END
+//*3:58:07MY First OBJECT
+let course = {
+    title: "learn css grid for free",
+    lessons: 16,
+    creator: "Per haledr borghan",
+    length: 63,
+    level: 2,
+    isfree: true,
+    tags: ["Html", "css"]
+};
+//*4:04:42MY First OBJECT
+
+console.log(course.title);
+
+//*3:46:44MY First Logic Opration
+// let hasSolvedChallenge = false;
+// let hasHintsLeft = false;
+
+// if (hasSolvedChallenge === false && hasHintsLeft === false) {
+//     showSolution()
+// };
+
+// function showSolution() {
+//     console.log("showing the solution...");
+// };
+
+
+
+
+
+
 //*3:17:09 return lesson;
 // let player1Time = 102;
 // let player2Time = 107;
