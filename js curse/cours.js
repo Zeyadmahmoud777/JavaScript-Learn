@@ -1,83 +1,73 @@
 //&GAME start
-let cards = [];
-let sum = 0;
-let hasBlackJack = false;
-let isAlive = true;
-let message = "";
-let messageEl = document.getElementById("message-el");
-let sumEl = document.querySelector("#sum-el");
-let cardsEl = document.getElementById("cards-el");
+// let cards = [];
+// let sum = 0;
+// let hasBlackJack = false;
+// let isAlive = true;
+// let message = "";
+// let messageEl = document.getElementById("message-el");
+// let sumEl = document.querySelector("#sum-el");
+// let cardsEl = document.getElementById("cards-el");
 
-let player = {
-    name: "per",
-    chips: "145"
-};
-let playerEl = document.getElementById("player-el");
-playerEl.textContent = player.name + ": $" + player.chips;
-
-
+// let player = {
+//     name: "per",
+//     chips: "145"
+// };
+// let playerEl = document.getElementById("player-el");
+// playerEl.textContent = player.name + ": $" + player.chips;
 
 
 
-function getRandomCard() {
-     let randomNumber = Math.floor(Math.random() * 13) + 1;
-    if (randomNumber > 10) {
-        return 10;
-    } else if(randomNumber === 1){
-        return 11;
-    } else {
-       return randomNumber;
-    };
-};
-
-function startGame() {
-    isAlive = true;
-    let firstCard = getRandomCard();
-    let secondCard = getRandomCard();
-    cards = [firstCard, secondCard];
-    sum = firstCard + secondCard;
-    renderGame();
-};
-function renderGame() {
-    cardsEl.textContent = "Cards: ";
-    for (let i = 0; i < cards.length; i++){
-        cardsEl.textContent += cards[i] + " ";
-    };
-    sumEl.textContent = "sum: " + sum;
-    if (sum <= 20) {
-        message = "Do you want to draw a new card?";
-} else if (sum === 21) {
-    message = "Blackjack!";
-        hasBlackJack = true;
-} else {
-    message = "You Lost?";
-        isAlive = true;
-}
-    messageEl.textContent = message;
-};
-
-function newCard() {
-    if (isAlive === true && hasBlackJack === false) {
-    let card = getRandomCard();
-    sum += card;
-    cards.push(card);
-    renderGame();
-    };
-};
 
 
+// function getRandomCard() {
+//      let randomNumber = Math.floor(Math.random() * 13) + 1;
+//     if (randomNumber > 10) {
+//         return 10;
+//     } else if(randomNumber === 1){
+//         return 11;
+//     } else {
+//        return randomNumber;
+//     };
+// };
+
+// function startGame() {
+//     isAlive = true;
+//     let firstCard = getRandomCard();
+//     let secondCard = getRandomCard();
+//     cards = [firstCard, secondCard];
+//     sum = firstCard + secondCard;
+//     renderGame();
+// };
+// function renderGame() {
+//     cardsEl.textContent = "Cards: ";
+//     for (let i = 0; i < cards.length; i++){
+//         cardsEl.textContent += cards[i] + " ";
+//     };
+//     sumEl.textContent = "sum: " + sum;
+//     if (sum <= 20) {
+//         message = "Do you want to draw a new card?";
+// } else if (sum === 21) {
+//     message = "Blackjack!";
+//         hasBlackJack = true;
+// } else {
+//     message = "You Lost?";
+//         isAlive = true;
+// }
+//     messageEl.textContent = message;
+// };
+
+// function newCard() {
+//     if (isAlive === true && hasBlackJack === false) {
+//     let card = getRandomCard();
+//     sum += card;
+//     cards.push(card);
+//     renderGame();
+//     };
+// };
 
 //*4:10:42;
-
-
-
-
-
-
-
-
-
 //&GAME END
+
 //*3:58:07MY First OBJECT
 // let course = {
 //     title: "learn css grid for free",
@@ -163,3 +153,76 @@ function newCard() {
 // greetimgEl.textContent += sentence[i] + " ";      if (age <= 20) {
 //     console.log("Ypu can not entet the club");
 // } else {
+
+//! Anther App here st
+// let person = {
+//     name: "Per",
+//     age: 35,
+//     country: "Norway"
+// };
+
+// function logData() {
+//     console.log(person.name + " is " + person.age + " years old and lives in " + person.country);
+// };
+// logData();
+
+//*if else
+// let age = 18;
+
+// if (age < 6) {
+//     console.log("free");
+// } else if (age < 18) {
+//     console.log("child discount");
+// } else if (age < 27) {
+//     console.log("student discount");
+// } else if (age < 67) {
+//     console.log("full price");
+// } else {
+//     console.log("senior citizen discount");
+// }
+
+//? the loop is here
+// let largeCountries = ["China", "India", "USA", "Indoesia", "Pakistan"];
+
+// console.log("The 5 largest countries in the world");
+// for (let i = 0; i < largeCountries.length; i++){
+//     console.log("- " + largeCountries[i]);
+// };
+
+
+//? the loop is here
+
+// let largeCountries = ["China", "India", "USA", "Indoesia", "Pakistan"];
+
+// console.log("The 5 largest countries in the world:");
+// for (let i = 0; i < largeCountries.length; i++){
+//     console.log("- " + largeCountries[i]);
+// };
+
+//? the loop is here
+//  let largeCountries = ["Tuvalu", "India", "USA", "Indoesia", "Monaco"];
+
+// largeCountries.pop()
+// largeCountries.push("Pakistan"); //*replace in the last el in loop;
+// largeCountries.shift()
+// largeCountries.unshift("China");//* replace in the first el in loop;
+// console.log(largeCountries);
+
+
+//? the Logical Operators is here
+
+// let dayOfMonuth = 13;
+// let weekday = "Friday";
+
+// if (dayOfMonuth === 13 && weekday === "Friday") {
+//     console.log("😱");
+// };
+
+
+//? the Logical Operators is here game
+let hands = ["rock", "paper", "scissor"];
+
+
+
+
+//! end Anther App here
