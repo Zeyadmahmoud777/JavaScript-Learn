@@ -219,10 +219,46 @@
 // };
 
 
+//*ARREY IMP
+// function getRandomItemFromArray(arr) {//*GOOGLE
+//   // Generate a random floating-point number between 0 (inclusive) and 1 (exclusive)
+//   const randomIndex = Math.random();
+
+//   // Multiply the random number by the array's length to get a number within the index range
+//   // Use Math.floor() to round down to the nearest whole number, ensuring it's a valid array index
+//   const index = Math.floor(randomIndex * arr.length);
+
+//   // Return the element at the calculated random index
+//   return arr[index];
+// }
+// const randomItem = getRandomItemFromArray(hands);
+
+// console.log(randomItem);
+
+
 //? the Logical Operators is here game
-let hands = ["rock", "paper", "scissor"];
+// let hands = ["rock", "paper", "scissor"];//*FROM A MEN YOUTUBE
+
+// function getHadn() {
+//     let randomIndex = Math.floor(Math.random() * 3);
+//     return hands[randomIndex];
+// };
+
+// console.log(getHadn());
 
 
 
+// function getRandItem(item) {//*my code
+//     const randIndex = Math.random();
+//     const index = Math.floor(randIndex * item.length);
 
+//     return item[index];
+// };
+
+// const items = ["plan", "car", "bus", "tree", "phone"];
+
+// const randItem = getRandItem(items);
+
+// console.log(randItem);
+//*4:30:46
 //! end Anther App here
