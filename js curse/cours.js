@@ -289,12 +289,22 @@ const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value);
-    console.log(myLeads);
 });
 
 for (let i = 0; i < myLeads.length; i++){
-    ulEl.textContent += myLeads[i] + " ";
+    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li> "; //* the anther sloution for this code
+    const li = document.createElement("li");
+    li.textContent = myLeads[i];
+    ulEl.append();
 };
 
+//* MY FIRST InnerHTML code in js; 5:20:05
+// const container = document.getElementById("container");
+
+// container.innerHTML = "<button onclick='buy()'>Buy!</button>";
+
+// function buy() {
+//     container.innerHTML += "<p>Thank you for buying!</p>";
+// };
 
 //! end  Chrome Extension here2
