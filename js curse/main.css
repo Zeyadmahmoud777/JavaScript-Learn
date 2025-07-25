@@ -1,6 +1,6 @@
 
 
-body{
+/* body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url('../imgs/88532181_9999520.jpg');
     background-size: cover;
@@ -10,8 +10,8 @@ body{
     text-align: center;
     color: white;
     font-weight: bold;
-}
-
+} */
+/* 
 h1{
     color: goldenrod;
 }
@@ -79,4 +79,89 @@ h1{
    font-size: 30px;
    font-weight: bold;
    color: white;
+} */
+
+
+/**----------------------*/
+/* #apple-shelf{
+    width: 350px;
+    height: 50px;
+    transform: translate(75%, 130%);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #b34347, #d1565a);
 }
+#orange-shelf{
+    width: 350px;
+    height: 50px;
+    transform: translate(75%, 200%);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(230, 133, 23), #eb8817);
+} */
+/** ------------------------------------*/
+/*~ ----------=========== start Chrome Extension===============-----------------*/
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 450px;
+    height: 40px;
+    transform: translate(275px, 50px);
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+}
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #5f9341;
+    box-shadow: 0 0 5px rgba(95, 147, 65, 0.5);
+}
+button{
+    padding: 10px 25px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: #5f9341;
+    color: white;
+    border-radius: 10px;
+    transform: translate(-5px, 100px);
+}
+button:hover {
+    background-color: #4a7b34;
+    cursor: pointer;
+}
+button:active {
+    background-color: #3c6a2a;
+    box-shadow: inset 0 0 5px rgba(95, 147, 65, 0.5);
+    transform: translate(-5px, 102px);
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(95, 147, 65, 0.5);
+}
+
+#ul-el{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transform: translate(450px, 140px);
+    width: 0px;
+}
+
+
+/*& sectio 5 lesson 15 5:11:23*/
+
+
+
+
+
+/*~ ---------------===========start Chrome Extension ===============------------*/
+
+
+
+
+

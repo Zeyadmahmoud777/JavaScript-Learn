@@ -261,4 +261,40 @@
 
 // console.log(randItem);
 //*4:30:46
-//! end Anther App here
+// let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"];
+// let appleShelf = document.getElementById("apple-shelf");
+// let orangeShelf = document.getElementById("orange-shelf");
+// function sortFruit() {
+//     for (let i = 0; i < fruit.length; i++){
+//         if (fruit[i] === "🍎") {
+//             appleShelf.textContent += "🍎";
+//         } else if (fruit[i] === "🍊") {
+//             orangeShelf.textContent += "🍊";
+//         };
+//     };
+
+// };
+// sortFruit();
+//! end Anther App here1
+//! start  Chrome Extension here2
+// function saveLead() {
+//     console.log("btn");
+// };
+
+//*WE Add a el.addEventListener("here put what we want like "click"" and we call the function or event well happen when we click the btn);
+let myLeads = ["www.facebook.com", "www.youtube.com", "www.x.com"];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
+
+inputBtn.addEventListener("click", function () {
+    myLeads.push(inputEl.value);
+    console.log(myLeads);
+});
+
+for (let i = 0; i < myLeads.length; i++){
+    ulEl.textContent += myLeads[i] + " ";
+};
+
+
+//! end  Chrome Extension here2
