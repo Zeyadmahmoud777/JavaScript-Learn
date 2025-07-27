@@ -282,22 +282,45 @@
 // };
 
 //*WE Add a el.addEventListener("here put what we want like "click"" and we call the function or event well happen when we click the btn);
-let myLeads = ["www.facebook.com", "www.youtube.com", "www.x.com"];
+let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
+const removeBtn = document.getElementById("cleare-btn");
 
 inputBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value);
+    inputEl.value = '';
+    renderLeads();
 });
 
-for (let i = 0; i < myLeads.length; i++){
-    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li> "; //* the anther sloution for this code
-    const li = document.createElement("li");
-    li.textContent = myLeads[i];
-    ulEl.append();
-};
+function cleare() {
+    inputEl.value = '';
+}
 
+function renderLeads() {
+    let listItem = "";
+    for (let i = 0; i < myLeads.length; i++){
+        // ulEl.innerHTML += "<li>" + myLeads[i] + "</li> ";         //* the anther sloution for this code
+        listItem += "<li><a target='_blank' href=' " + myLeads[i] + " '>" + myLeads[i] + "</a></li> ";
+    };
+    ulEl.innerHTML = listItem;
+}
+
+//*5:33:18
+
+
+
+
+
+
+
+
+
+
+// const li = document.createElement("li");
+// li.textContent = myLeads[i];
+// ulEl.append(li);
 //* MY FIRST InnerHTML code in js; 5:20:05
 // const container = document.getElementById("container");
 

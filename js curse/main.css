@@ -121,7 +121,7 @@ input[type="text"]:focus {
     border: 2px solid #5f9341;
     box-shadow: 0 0 5px rgba(95, 147, 65, 0.5);
 }
-button{
+#input-btn{
     padding: 10px 25px;
     font-weight: bold;
     border: 1px solid transparent;
@@ -130,16 +130,16 @@ button{
     border-radius: 10px;
     transform: translate(-5px, 100px);
 }
-button:hover {
+#input-btn:hover {
     background-color: #4a7b34;
     cursor: pointer;
 }
-button:active {
+#input-btn:active {
     background-color: #3c6a2a;
     box-shadow: inset 0 0 5px rgba(95, 147, 65, 0.5);
     transform: translate(-5px, 102px);
 }
-button:focus {
+#input-btn:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(95, 147, 65, 0.5);
 }
@@ -164,13 +164,44 @@ button:focus {
 } */
 /*& sectio 5 lesson 15 5:11:23*/
 
-
-
-
-
 /*~ ---------------===========start Chrome Extension ===============------------*/
+.close-button::after {
+  content: "\00d7"; /* This renders the 'X' */
+  font-size: 20px; /* Adjust size as needed */
+  line-height: 1; /* Ensures proper vertical alignment */
+}
+.close-button {
+  position: absolute;
+  width: 20px; /* Adjust size as needed */
+  height: 30px;
+  transform: translate(695px, 14px);
+    padding-left: 5px;
+}
 
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px; /* Thickness of the 'X' lines */
+  background-color: grey; /* Color of the 'X' */
+  top: 50%;
+  left: 0;
+  transform-origin: center center;
+}
 
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
+
+.close-button {
+  background-color: #eee; /* Or an image */
+  border: none;
+}
 
 
 
