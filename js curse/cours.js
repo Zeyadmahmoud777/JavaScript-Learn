@@ -304,8 +304,10 @@ function renderLeads() {
         // ulEl.innerHTML += "<li>" + myLeads[i] + "</li> ";         //* the anther sloution for this code
         listItem += `
         <li>
-            <a target='_blank' href=' " + myLeads[i] + " '>" + myLeads[i] + "</a>
-            </li> `;
+            <a target='_blank' href="${myLeads[i]}">
+                ${myLeads[i]}
+            </a>
+        </li> `;
     };
     ulEl.innerHTML = listItem;
 }
@@ -313,7 +315,14 @@ function renderLeads() {
 //*5:34:45
 
 
+//* pradctise __template strings/literals
 
+const recipient = "James";
+const sender = "Per Harald Borgen";
+
+const email = `Hey ${recipient}! How is it going? Cheers ${sender}`;
+
+console.log(email);
 
 
 
