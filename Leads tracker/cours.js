@@ -281,12 +281,19 @@
 //     console.log("btn");
 // };
 
+
 //*WE Add a el.addEventListener("here put what we want like "click"" and we call the function or event well happen when we click the btn);
+// URL = "chrome://extensions/";
 let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
-const removeBtn = document.getElementById("cleare-btn");
+// const removeBtn = document.getElementById("cleare-btn");
+
+// localStorage.setItem("myLeads", "www.examplelead.com");
+
+console.log(localStorage.getItem("myLeads"));
+
 
 inputBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value);
@@ -294,9 +301,9 @@ inputBtn.addEventListener("click", function () {
     renderLeads();
 });
 
-function cleare() {
-    inputEl.value = '';
-}
+// function cleare() {
+//     inputEl.value = '';
+// }
 
 function renderLeads() {
     let listItem = "";
@@ -312,7 +319,7 @@ function renderLeads() {
     ulEl.innerHTML = listItem;
 }
 
-//*5:34:45
+//*6:2:45
 
 
 //* pradctise __template strings/literals

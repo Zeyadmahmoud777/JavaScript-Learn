@@ -1,0 +1,10 @@
+    
+    {
+    "manifest_version": 3,
+    "version": "1.2.4",
+    "name": "Leads tracker",
+    "action":{
+        "default_popup": "cors.html",
+        "default_icon": "icon.png"
+    }
+}

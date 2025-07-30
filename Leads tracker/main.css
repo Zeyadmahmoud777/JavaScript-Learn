@@ -105,14 +105,15 @@ body{
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    min-width: 400px;
+    /* height: 86vh; */
 }
 
 input[type="text"] {
     padding: 10px;
     width: 450px;
     height: 40px;
-    transform: translate(275px, 50px);
+    transform:  translate(-2px, 20px);
     font-size: 16px;
     box-sizing: border-box;
     border: 1px solid #5f9341;
@@ -129,13 +130,13 @@ input[type="text"]:focus {
     background-color: #5f9341;
     color: white;
     border-radius: 10px;
-    transform: translate(-5px, 100px);
+    transform: translate(170px, 35px);
 }
 #input-btn:hover {
     background-color: #4a7b34;
     cursor: pointer;
 }
-#input-btn:active {
+/* #input-btn:active {
     background-color: #3c6a2a;
     box-shadow: inset 0 0 5px rgba(95, 147, 65, 0.5);
     transform: translate(-5px, 102px);
@@ -143,13 +144,13 @@ input[type="text"]:focus {
 #input-btn:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(95, 147, 65, 0.5);
-}
+} */
 
 #ul-el{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    transform: translate(450px, 140px);
+    /* transform: translate(450px, 140px); */
     width: 0px;
 }
 
