@@ -280,48 +280,72 @@
 // function saveLead() {
 //     console.log("btn");
 // };
+//for json myLeads = JSON.parse(myLeads);
 
+// myLeads.push("www.google.com");
+
+// console.log(myLeads);
+        // ulEl.innerHTML += "<li>" + myLeads[i] + "</li> ";         //* the anther sloution for this code
+// const removeBtn = document.getElementById("cleare-btn");
 
 //*WE Add a el.addEventListener("here put what we want like "click"" and we call the function or event well happen when we click the btn);
-// URL = "chrome://extensions/";
 let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
-// const removeBtn = document.getElementById("cleare-btn");
+const deleteBtn = document.getElementById("delete-btn");
+const tabBtn = document.getElementById("tab-btn");
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
-// localStorage.setItem("myLeads", "www.examplelead.com");
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage;
+    render(myLeads);
+};
 
-console.log(localStorage.getItem("myLeads"));
-
-
-inputBtn.addEventListener("click", function () {
-    myLeads.push(inputEl.value);
-    inputEl.value = '';
-    renderLeads();
+tabBtn.addEventListener("click", function() {
+    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+        myLeads.push(tabs[0].url);
+        localStorage.getItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    });
 });
 
-// function cleare() {
-//     inputEl.value = '';
-// }
-
-function renderLeads() {
+function render(leads) {
     let listItem = "";
-    for (let i = 0; i < myLeads.length; i++){
-        // ulEl.innerHTML += "<li>" + myLeads[i] + "</li> ";         //* the anther sloution for this code
+    for (let i = 0; i < leads.length; i++){
         listItem += `
         <li>
-            <a target='_blank' href="${myLeads[i]}">
-                ${myLeads[i]}
+            <a target='_blank' href="${leads[i]}">
+                ${leads[i]}
             </a>
         </li> `;
     };
     ulEl.innerHTML = listItem;
-}
+};
+
+deleteBtn.addEventListener("dblclick", function() {
+    localStorage.clear();
+    myLeads = [];
+    render(myLeads);
+});
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value);
+    inputEl.value = '';
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) );
+    render(myLeads);
+});
+
+
+
+
+
 
 //*6:2:45
 
-
+// function cleare() {
+//     inputEl.value = '';
+// }
 //* pradctise __template strings/literals
 
 // const recipient = "James";

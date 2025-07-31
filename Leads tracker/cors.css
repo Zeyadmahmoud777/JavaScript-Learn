@@ -13,13 +13,13 @@ input {
     margin-bottom: 4px;
 }
 
-button {
+/* button {
     background: #5f9341;
     color: white;
     padding: 10px 20px;
     border: none;
     font-weight: bold;
-}
+} */
 
 ul {
     margin-top: 20px;
@@ -34,4 +34,50 @@ li {
 
 a {
     color: #5f9341;
+}
+.save-btn {
+    background-color: #5f9341;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.save-btn:hover {
+    background-color: #145a0b;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.save-btn:active {
+    transform: scale(0.95);
+}
+.delal-btn{
+    background-color: white;
+    color: #5f9341;
+    border: 1px solid #5f9341;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.delal-btn:hover {
+    background-color: rgb(201, 47, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.delal-btn:active {
+    transform: scale(0.95);
+}
+.save-tap-btn{
+    background-color: #0ea4d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.save-tap-btn:hover {
+    background-color: #186e88;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.save-tap-btn:active {
+    transform: scale(0.95);
 }
